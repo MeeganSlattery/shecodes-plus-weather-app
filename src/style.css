@@ -1,0 +1,159 @@
+body {
+  background: rgb(0, 0, 0);
+  color: rgb(236, 236, 236);
+}
+button {
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: transparent;
+  color: rgb(236, 236, 236);
+  font-size: x-small;
+  padding: 0;
+}
+button:hover {
+  cursor: default;
+}
+p {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+small {
+  font-weight: 200;
+  font-size: small;
+}
+h1,
+h2,
+.today,
+.highLowDailyTemp {
+  text-align: center;
+}
+.today {
+  margin-bottom: 0;
+}
+.shadowBox {
+  margin: 40px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background-image: url("earth.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.humPressWindBox {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.48);
+}
+.daysOfTheWeekBox {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(53, 53, 53, 0.48);
+}
+.dayOfWeek {
+  background: rgba(0, 0, 0, 0.468);
+  padding: 5px;
+  margin: 7px;
+  border-radius: 5px;
+}
+.search,
+#search {
+  background: rgba(68, 68, 68, 0.436);
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+  max-width: 200px;
+  padding-top: 3px;
+  color: whitesmoke;
+}
+#search {
+  margin-bottom: 50px;
+  color: rgb(104, 104, 104);
+  transition: all 200ms ease-in-out;
+}
+#search:hover {
+  color: rgb(150, 150, 150);
+}
+.currentLocation {
+  position: relative;
+  bottom: +45px;
+  margin-top: 0;
+  padding: 5px;
+}
+.currentLocation:hover {
+  color: aqua;
+}
+.day {
+  font-size: larger;
+  font-weight: 600;
+  margin: 5px;
+}
+.weekTemp {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.day,
+.weekTemp {
+  position: relative;
+  bottom: +35px;
+}
+.emoji {
+  text-align: left;
+  font-size: 40px;
+}
+.press,
+.wind,
+.hum,
+.forcast {
+  line-height: 20px;
+  text-align: left;
+  position: relative;
+  top: +18px;
+  font-size: large;
+}
+
+.press,
+.hum,
+.forcast {
+  position: relative;
+  top: +20px;
+}
+.inHg,
+.nw,
+.percentHum,
+.weatherForcast {
+  text-align: right;
+  position: relative;
+  bottom: +18px;
+  font-size: large;
+}
+
+.date {
+  color: rgb(91, 91, 91);
+  font-weight: 100;
+}
+.c:hover,
+.f:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.meName {
+  color: aqua;
+}

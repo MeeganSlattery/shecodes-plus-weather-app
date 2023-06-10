@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shadowBox">
+        <form action="" id="search-form">
+          <input
+            type="text"
+            class="search"
+            placeholder="Search..."
+            id="search-text-input"
+          />
+          <input type="submit" placeholder="Enter" id="search" />
+          <button id="current-Location" class="currentLocation">
+            Current Location
+          </button>
+        </form>
+        <p class="today" id="current-day">Today</p>
+        <h2>Search for a location...</h2>
+        <div class="tempSwitchButtonBox">
+          <button id="dagree-button">
+            <span class="c">°C</span> / <span class="f">°F </span>
+          </button>
+        </div>
+        <h1>_°C</h1>
+        <h5 class="highLowDailyTemp">
+          <small>H</small> <span id="daily-high-temp">__ </span>
+          <small> ▷ </small> <small>L</small>
+          <span id="daily-low-temp">__ </span>
+        </h5>
+        <div class="humPressWindBox">
+          <p class="press">Pressure</p>
+          <p class="inHg"><span id="millibar">----</span> mb.</p>
+          <hr />
+          <p class="wind">Wind Speed</p>
+          <p class="nw"><span id="wind-speed">--</span> km</p>
+          <hr />
+          <p class="hum">Humidity</p>
+          <p class="percentHum"><span id="percent"> --</span>%</p>
+          <hr />
+          <p class="forcast">Forcast</p>
+          <p class="weatherForcast"><span id="weather-forcast">___</span></p>
+        </div>
+
+        <div class="daysOfTheWeekBox">
+          <div class="z">
+            <div class="dayOfWeek">
+              <p class="emoji">☀️</p>
+              <p class="day">5 Friday</p>
+              <p class="weekTemp">°31 | °27</p>
+            </div>
+            <div class="dayOfWeek">
+              <p class="emoji">🌦️</p>
+              <p class="day">6 Saturday</p>
+              <p class="weekTemp">°31 | °27</p>
+            </div>
+            <div class="dayOfWeek">
+              <p class="emoji">☀️</p>
+              <p class="day">7 Sunday</p>
+              <p class="weekTemp">°30 | °26</p>
+            </div>
+            <div class="dayOfWeek">
+              <p class="emoji">☀️</p>
+              <p class="day">8 Monday</p>
+              <p class="weekTemp">°30 | °26</p>
+            </div>
+            <div class="dayOfWeek">
+              <p class="emoji">🌧️</p>
+              <p class="day">9 Tuesday</p>
+              <p class="weekTemp">°30 | °27</p>
+            </div>
+            <div class="dayOfWeek">
+              <p class="emoji">⛈️</p>
+              <p class="day">10 Wednesday</p>
+              <p class="weekTemp">°30 | °27</p>
+            </div>
+            <div class="dayOfWeek">
+              <div class="row">
+                <p class="emoji">☀️</p>
+                <p class="day">11 Thursday</p>
+                <p class="weekTemp">°30 | °27</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <footer>
+          This app was coded by
+          <a
+            href="https://www.instagram.com/meegans14_photography/"
+            class="meName"
+            >Meegan Slattery</a
+          >
+          <br />
+          <small>For educational purposes</small> <br />
+          <small class="date">14.05.2023</small>
+        </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
