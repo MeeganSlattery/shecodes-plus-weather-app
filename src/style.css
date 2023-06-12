@@ -154,6 +154,7 @@ h2,
   color: aqua;
   cursor: pointer;
 }
-.meName {
+.meName,
+.gitHub {
   color: aqua;
 }
